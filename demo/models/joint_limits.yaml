@@ -1,0 +1,6 @@
+joint_limits:
+  joint_0:
+    has_velocity_limits: true
+    max_velocity: 6.97
+    has_acceleration_limits: true
+    max_acceleration: 1.0
