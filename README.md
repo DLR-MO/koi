@@ -7,29 +7,36 @@ This package allows you to find (near-)optimal kinematic configurations that max
 KOI also allows optimizing the position of a given robot towards a target object without changes to its kinematics. 
 This can be used to compute where a mobile robot should position itself to start work on a part without further need of repositioning.
 
-<div style="display: flex; align-items: center; gap: 10px;">
-  <figure style="margin: 0;">
-    <img width="400px" src="images/positioning_demo.gif"/>
-    <figcaption>Optimization Process</figcaption>
-  </figure>
-  <span style="font-size: 2em;">&rArr;</span>
-  <figure style="margin: 0;">
-    <img width="400px" src="images/positioning_demo_best.png"/>
-    <figcaption>Best Result</figcaption>
-  </figure>
-</div>
+<table style="width: 100%; text-align: center;">
+  <tr style="border: none;">
+    <td style="border: none;">
+      <p>Optimization Process</p>
+    </td>
+    <td style="border: none;"></td>
+    <td style="border: none;">
+      <p>Best Result</p>
+    </td>
+  </tr>
+  <tr style="border: none;">
+    <td style="border: none;">
+      <img width="400px" src="images/positioning_demo.gif"/>      
+    </td>
+    <td style="font-size: 2em; vertical-align: middle; border: none;">&rArr;</td>
+    <td style="border: none;">
+      <img width="400px" src="images/positioning_demo_best.png"/>
+    </td>
+  </tr>
+  <tr style="border: none;">
+    <td style="border: none;">
+      <img width="400px" src="images/serial_demo.gif"/>
+    </td>
+    <td style="font-size: 2em; vertical-align: middle; border: none;">&rArr;</td>
+    <td style="border: none;">
+      <img width="400px" src="images/serial_demo_best.png"/>
+    </td>
+  </tr>  
+</table>
 
-<div style="display: flex; align-items: center; gap: 10px;">
-  <figure style="margin: 0;">
-    <img width="400px" src="images/serial_demo.gif"/>
-    <figcaption>Optimization Process</figcaption>
-  </figure>
-  <span style="font-size: 2em;">&rArr;</span>
-  <figure style="margin: 0;">
-    <img width="400px" src="images/serial_demo_best.png"/>
-    <figcaption>Best Result</figcaption>
-  </figure>
-</div>
 
 KOI builds upon two existing open source projects and brings these together:
 
