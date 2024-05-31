@@ -106,7 +106,7 @@ There are two demos which show the capabilities of koi.
 - The `positioning.py` script uses the standard demo of REACH and optimizes the position of the robot's base towards the work piece to maximize reachability.
 - The `serial_robot.py` script uses the same REACH demo object but tries to find an optimal kinematic structure for a simplified serial robotic arm.
 
-Run `ros2 launch reach_ros2 setup.launch.py` to activate the visualization from REACH which will give you a nice graphical representation of each trial.
+Run `ros2 launch reach_ros setup.launch.py` to activate the visualization from REACH which will give you a nice graphical representation of each trial.
 
 For demo purposes, we will use the `interactive` mode of KOI which will wait for the user to press a key after each trial so that we can review each result. You can deactivate this by removing the `--interactive` argument from the command. Similarly, you can also deactivate any publishing of visualization data to further speed up the optimization by removing the `--viz` option.
 
