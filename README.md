@@ -69,7 +69,15 @@ cd koi/docker
 docker build -t koi .
 ```
 
-//todo how to run it
+Then you can run it with the following command
+``` bash
+docker run -it --env="DISPLAY" --net=host --volume="$HOME/.Xauthority:/root/.Xauthority:rw" koi bash
+```
+You now have a shell in the docker which contains a compiled version of KOI.
+This allows you to run the demos as described below without changes to your own system.
+
+If you have issues starting RViz2 in the docker, you might need to set the `DISPLAY` environment variable.
+Run `echo $DISPLAY` on your host system and then set the same value in docker with `export DISPLAY=:VALUE_FROM_HOST` .
 
 ### Building from Source
 Add the following line to your .bashrc or .zshrc 
