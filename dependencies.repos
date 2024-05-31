@@ -12,5 +12,5 @@
    version: 1.6.0
 - git:
    local-name: reach_ros2
-   uri: https://github.com/ros-industrial/reach_ros2.git
-   version: 1.4.0
+   uri: https://github.com/timonegk/reach_ros2.git
+   version: deprecated_headers
