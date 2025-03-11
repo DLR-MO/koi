@@ -114,6 +114,11 @@ Build the repository
 colcon build --symlink-install
 ```
 
+You might need to set the python path for reach explicitly
+``` bash
+export PYTHONPATH=$PYTHONPATH:~/ws_koi/install/reach/lib/python3/dist-packages
+```
+
 ## Usage
 
 To best understand how you can use KOI, try out the demos.
