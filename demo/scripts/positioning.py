@@ -83,7 +83,8 @@ class PositioningDemo(KoiStudy):
         add_fake_link_to_urdf(urdf, 'moved_base_link')
         add_fixed_joint_to_urdf(urdf, 'moved_base_joint', 'moved_base_link', 'base_link',
                                 parameters['base_position_x'], parameters['base_position_y'],
-                                parameters['base_position_z'], parameters['base_roll'], parameters['base_pitch'], parameters['base_yaw'])
+                                parameters['base_position_z'], parameters.get(
+                                    'base_roll', 0), parameters.get('base_pitch', 0), parameters.get('base_yaw', 0))
         urdf_string = ET.tostring(urdf, encoding='utf8', method='xml').decode('utf-8')
         # we don't want to change anything in the srdf, just read the files and return them
         with open(f'{self.reach_ros_dir}/demo/model/reach_study.srdf', 'r') as srdf_file:

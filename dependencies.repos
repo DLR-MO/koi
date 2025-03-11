@@ -1,7 +1,7 @@
 - git:
    local-name: ros_industrial_cmake_boilerplate
    uri: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate.git
-   version: 0.4.6
+   version: 0.7.3
 - git:
    local-name: boost_plugin_loader
    uri: https://github.com/tesseract-robotics/boost_plugin_loader.git
@@ -9,8 +9,8 @@
 - git:
    local-name: reach
    uri: https://github.com/ros-industrial/reach.git
-   version: 1.6.0
+   version: 1.7.2
 - git:
    local-name: reach_ros2
-   uri: https://github.com/timonegk/reach_ros2.git
-   version: deprecated_headers
+   uri: https://github.com/ros-industrial/reach_ros2.git
+   version: master
