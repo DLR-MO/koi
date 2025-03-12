@@ -86,9 +86,12 @@ docker run -it --env="DISPLAY" --net=host --volume="$HOME/.Xauthority:/root/.Xau
 ```
 You now have a shell in the docker which contains a compiled version of KOI.
 This allows you to run the demos as described below without changes to your own system.
+Make sure that you run the commands below in a single instance of the docker.
+You can achieve this by running the command `screen` which will start a terminal multiplexer.
+You can create new windows with `ctrl+a` `c` and switch between windows with `ctrl+a` and then a number from 0-9.
 
 If you have issues starting RViz2 in the docker, you might need to set the `DISPLAY` environment variable.
-Run `echo $DISPLAY` on your host system and then set the same value in docker with `export DISPLAY=:VALUE_FROM_HOST` .
+Run `echo $DISPLAY` on your host system and then set the same value in docker with `export DISPLAY=:VALUE_FROM_HOST`.
 
 ### Building from Source
 Add the following line to your .bashrc or .zshrc 
